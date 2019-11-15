@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="100dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffeb3b">
+
+            <TextView
+                android:id="@+id/text_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="ZUKONIT14"
+                android:textColor="#fff"
+                android:textSize="35sp"
+                app:fontFamily="@font/baloo_bhai" />
+
+            <TextView
+                android:id="@+id/subtext_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_id"
+                android:text="ZUKONIT14"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+                android:id="@+id/delete_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_id"
+                android:src="@drawable/ic_delete"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/link_button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@+id/delete_button"
+                android:src="@drawable/ic_link"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/transition">
+
+
+    <TextView
+        android:id="@+id/links_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Links"
+        android:textColor="#000"
+        android:textSize="50sp"
+        app:fontFamily="@font/abril_fatface" />
+
+    <ImageView
+        android:id="@+id/add_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/links_title"
+        android:src="@drawable/ic_add"/>
+
+    <TextView
+        android:id="@+id/no_task"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:text="There are No Links.\nTo add click on top right Button."
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:fontFamily="@font/enriqueta_bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/links_title"
+        android:layout_marginTop="30dp">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

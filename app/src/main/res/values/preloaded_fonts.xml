@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/alegreya_sans_medium</item>
+        <item>@font/allura</item>
+        <item>@font/archivo_black</item>
+        <item>@font/enriqueta_bold</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/roboto_medium</item>
+        <item>@font/suez_one</item>
+    </array>
+</resources>
